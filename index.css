@@ -1,0 +1,20 @@
+nav{
+    Background-color: #BCBAB8;
+    color: white;
+    border-radius: 3px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border: 3px groove #625757;
+    box-shadow: 3px;
+}
+*{
+    background-color: #EEEEee;
+}
+/**
+color palette:
+    light grey: eeeeee
+    mid grey:   BCBAB8
+    brown-grey: 9D8F8F
+    dark grey:  625757
+**/
