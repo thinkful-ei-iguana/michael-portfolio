@@ -1,3 +1,7 @@
+*{
+    font-family: 'hind', sans-serif;
+}
+
 nav{
     Background-color: #BCBAB8;
     color: white;
@@ -5,12 +9,28 @@ nav{
     padding-top: 20px;
     padding-bottom: 10px;
     padding-left: 10px;
+    padding-right: 10px;
     border: 3px groove #625757;
-    box-shadow: 3px;
+    box-shadow: 4px;
+    display: flex;
+    justify-content: space-between;
 }
-*{
-    font-family: 'hind', sans-serif;
-    background-color: #EEEEee;
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #eeeeee;
+}
+.container{
+    border: 5px groove #625757;
+    border-radius: 6px;
+    margin: 3px;
+    padding: 6px;
+    background-color: #eeeeee;
+}
+
+.socials{
+    background-color: #BCBAB8;
 }
 /**
 color palette:
@@ -19,3 +39,11 @@ color palette:
     brown-grey: 9D8F8F
     dark grey:  625757
 **/
+
+@media only screen and (min-width: 768px){
+
+}
+
+@media only screen and (min-width: 1368){
+
+}
