@@ -6,7 +6,7 @@ nav{
     Background-color: #BCBAB8;
     color: white;
     border-radius: 3px;
-    padding-top: 20px;
+    padding-top: 3px;
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
@@ -31,6 +31,13 @@ body{
 
 .socials{
     background-color: #BCBAB8;
+}
+
+footer{
+    position: absolute;
+    margin-right: 3px;
+    bottom: 3px;
+    width: 100%;
 }
 /**
 color palette:
