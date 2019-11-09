@@ -37,10 +37,11 @@ const project1 = `
     </ul>
     <a href="liveurl"></a>
     <a href="repositoryurl"></a>
+    <button id="previous">Previous</button>
+    <button id="next">Next</button>
      `;
 
 const project2 = `
-    <section class="container">
         <h3>Bookmarks App</h3>
         <p>The purpose of this project was to </p>
         <ul>Technologies
@@ -52,11 +53,11 @@ const project2 = `
         </ul>
         <a href="liveurl"></a>
         <a href="repositoryurl"></a>
-    </section>
+        <button id="previous">Previous</button>
+        <button id="next">Next</button>
     `;
 
 const project3 =     `
-    <section class="container">
         Placeholder for Project 3
         <p>The purpose of this project was to </p>
         <ul>Technologies
@@ -65,11 +66,11 @@ const project3 =     `
         </ul>
         <a href="liveurl"></a>
         <a href="repositoryurl"></a>
-    </section>
+        <button id="previous">Previous</button>
+        <button id="next">Next</button>
     `;
 
 const project4 = `
-  <section class="container" id=>
                 Placeholder for Project 4
                 <p>The purpose of this project was to </p>
                 <ul>Technologies
@@ -78,11 +79,11 @@ const project4 = `
                 </ul>
             <a href="liveurl"></a>
             <a href="repositoryurl"></a>
-            </section>
+            <button id="previous">Previous</button>
+            <button id="next">Next</button>
     `;
             
 const project5 = `
-    <section class="container">
         Placeholder for Project 5
         <p>The purpose of this project was to </p>
         <ul>Technologies
@@ -91,7 +92,8 @@ const project5 = `
         </ul>
     <a href="liveurl"></a>
     <a href="repositoryurl"></a>
-    </section>
+    <button id="previous">Previous</button>
+    <button id="next">Next</button>
     `;
 
 
@@ -101,8 +103,17 @@ const render = function(){
     renderProject();
 }
 
+const renderDefault = function(){
+    defaultHides();
+}
+
 const renderProject = function(){
     $('#projectSection').html(projectSelect(projectNumber));
+}
+
+const defaultHides = function(){
+    $('.projects').hide();
+    $('.contact').hide();
 }
 
 //////// Functionality ////////
@@ -164,7 +175,7 @@ const nextArrow = function(){
     $('.content').on('click', '#next', function(event){
         event.preventDefault();
         openNext();
-        $()
+        render();
     })
 }
 
@@ -172,9 +183,10 @@ const backArrow = function(){
     $('.content').on('click', '#back', function(event){
         event.preventDefault();
         openPrevious();
+        render();
     })
 }
 
 
     $(bindEventListeners());
-    $(render());
+    $(renderDefault());
