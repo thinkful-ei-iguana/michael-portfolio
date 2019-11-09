@@ -180,7 +180,7 @@ const nextArrow = function(){
 }
 
 const backArrow = function(){
-    $('.content').on('click', '#back', function(event){
+    $('.content').on('click', '#previous', function(event){
         event.preventDefault();
         openPrevious();
         render();

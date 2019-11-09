@@ -2,7 +2,9 @@
     font-family: 'hind', sans-serif;
 }
 
-nav{
+
+.topNav {
+    margin-bottom: 30px;
     Background-color: #BCBAB8;
     color: white;
     border-radius: 3px;
@@ -16,11 +18,24 @@ nav{
     justify-content: space-between;
 }
 
+nav a {
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    color: #625757;
+}
+
+.hero {
+
+}
+
 body{
     display: flex;
     flex-direction: column;
     background-color: #eeeeee;
 }
+
 .container{
     border: 5px groove #625757;
     border-radius: 6px;
@@ -29,8 +44,21 @@ body{
     background-color: #eeeeee;
 }
 
+.content {
+    margin-top: 60px;
+}
+
+.fa {
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+
+}
+
 .socials{
     background-color: #BCBAB8;
+    text-decoration: none;
+    color: #625757;
 }
 
 footer{
@@ -38,6 +66,8 @@ footer{
     margin-right: 3px;
     bottom: 3px;
     width: 100%;
+    justify-content: center;
+    text-align: center;
 }
 /**
 color palette:
