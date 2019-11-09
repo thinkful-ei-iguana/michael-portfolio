@@ -37,8 +37,8 @@ const project1 = `
     </ul>
     <a href="liveurl"></a>
     <a href="repositoryurl"></a>
-    <button id="previous">Previous</button>
-    <button id="next">Next</button>
+    <button class="navButton" id="previous">&#8249;</button>
+    <button class="navButton" id="next">&#8250;</button>
      `;
 
 const project2 = `
@@ -53,8 +53,8 @@ const project2 = `
         </ul>
         <a href="liveurl"></a>
         <a href="repositoryurl"></a>
-        <button id="previous">Previous</button>
-        <button id="next">Next</button>
+        <button class="navButton" id="previous">&#8249;</button>
+        <button class="navButton" id="next">&#8250;</button>
     `;
 
 const project3 =     `
@@ -66,21 +66,21 @@ const project3 =     `
         </ul>
         <a href="liveurl"></a>
         <a href="repositoryurl"></a>
-        <button id="previous">Previous</button>
-        <button id="next">Next</button>
+        <button class="navButton" id="previous">&#8249;</button>
+        <button class="navButton" id="next">&#8250;</button>
     `;
 
 const project4 = `
-                Placeholder for Project 4
-                <p>The purpose of this project was to </p>
-                <ul>Technologies
-                <li></li>
-                <li></li>
-                </ul>
-            <a href="liveurl"></a>
-            <a href="repositoryurl"></a>
-            <button id="previous">Previous</button>
-            <button id="next">Next</button>
+        Placeholder for Project 4
+        <p>The purpose of this project was to </p>
+        <ul>Technologies
+        <li></li>
+        <li></li>
+        </ul>
+    <a href="liveurl"></a>
+    <a href="repositoryurl"></a>
+    <button class="navButton" id="previous">&#8249;</button>
+    <button class="navButton" id="next">&#8250;</button>
     `;
             
 const project5 = `
@@ -92,8 +92,8 @@ const project5 = `
         </ul>
     <a href="liveurl"></a>
     <a href="repositoryurl"></a>
-    <button id="previous">Previous</button>
-    <button id="next">Next</button>
+    <button class="navButton" id="previous">&#8249;</button>
+    <button class="navButton" id="next">&#8250;</button>
     `;
 
 
