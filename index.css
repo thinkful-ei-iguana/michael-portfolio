@@ -129,6 +129,10 @@ footer{
     background-color: rgb(0,0,0, 0.8);
     color: #ffffff;
 }
+.projectLinks a{
+    text-decoration: bold;
+    color: #ffffff;
+}
 
 .aboutMe{
     background-color: rgb(0,0,0, 0.8);

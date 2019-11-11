@@ -35,8 +35,10 @@ const project1 = `
         <li>Git</li>
         <li>Command</li>
     </ul>
-    <a href="liveurl"></a>
-    <a href="repositoryurl"></a>
+    <div class="projectLinks">
+      <a href="https://thinkful-ei-iguana.github.io/TheQuizToEndAllQuizzes/" target="_blank">Take it for a spin!</a>
+      <a href="https://github.com/thinkful-ei-iguana/TheQuizToEndAllQuizzes" target="_blank">See the code.</a>
+    </div>
     <button class="navButton" id="previous">&#8249;</button>
     <button class="navButton" id="next">&#8250;</button>
      `;
@@ -51,8 +53,10 @@ const project2 = `
             <li>CSS</li>
             <li>Html</li>
         </ul>
-        <a href="liveurl"></a>
-        <a href="repositoryurl"></a>
+        <div class="projectLinks">
+          <a href="https://thinkful-ei-iguana.github.io/michael-bookmarks-app/dist/" target="_blank">Take it for a spin!</a>
+          <a href="https://github.com/thinkful-ei-iguana/michael-bookmarks-app" target="_blank">See the code.</a>
+        </div>
         <button class="navButton" id="previous">&#8249;</button>
         <button class="navButton" id="next">&#8250;</button>
     `;
