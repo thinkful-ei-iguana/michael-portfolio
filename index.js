@@ -176,7 +176,7 @@ const nextArrow = function(){
     event.preventDefault();
     openNext();
     render();
-  })
+  });
 }
 
 const backArrow = function(){
@@ -184,7 +184,7 @@ const backArrow = function(){
     event.preventDefault();
     openPrevious();
     render();
-  })
+  });
 }
 
 
