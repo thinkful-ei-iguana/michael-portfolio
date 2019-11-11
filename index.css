@@ -53,8 +53,8 @@ body{
 }
 
 main{
-    overflow: auto;
-    padding-bottom: 100px;
+    min-height: 100%;
+    padding-bottom: 50px;
 }
 
 .container{
@@ -74,7 +74,6 @@ main{
     font-size: 24px;
     text-align: center;
     padding: 10px;
-
 }
 
 .contact{
@@ -99,13 +98,22 @@ main{
 
 footer{
     position: absolute;
-    height: 100px;
-    margin-top: -100px;
+    height: 50px;
     margin-right: 3px;
     bottom: 0;
     width: 100%;
     justify-content: center;
     text-align: center;
+}
+.footerNav{
+    position: absolute;
+    height: 50px;
+    margin-right: 3px;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    background-color: #BCBAB8;
 }
 
 .heroContainer{
