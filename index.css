@@ -45,8 +45,16 @@ img {
 
 body{
     display: flex;
+    justify-content: space-between;
+    height: 100%;
     flex-direction: column;
     background-color: #eeeeee;
+    min-height: 100%;
+}
+
+main{
+    overflow: auto;
+    padding-bottom: 100px;
 }
 
 .container{
@@ -70,17 +78,18 @@ body{
 }
 
 .contact{
-    border: 1px solid #625757;
+    border: 5px groove #625757;
     padding: 20px;
     margin: 20px;
     display: flex;
     justify-content: space-evenly;
-    color: #625757;
+    color: #ffffff;
     text-align: center;
+    background-color: rgb(0,0,0, 0.8);
 }
 .contact a{
     text-decoration: none;
-    color: #625757;
+    color: #ffffff;
 }
 .socials{
     background-color: #BCBAB8;
@@ -90,8 +99,10 @@ body{
 
 footer{
     position: absolute;
+    height: 100px;
+    margin-top: -100px;
     margin-right: 3px;
-    bottom: 3px;
+    bottom: 0;
     width: 100%;
     justify-content: center;
     text-align: center;
@@ -112,6 +123,16 @@ footer{
     justify-content: space-evenly;
     text-align: center;
     width: 100%;
+}
+
+.projects{
+    background-color: rgb(0,0,0, 0.8);
+    color: #ffffff;
+}
+
+.aboutMe{
+    background-color: rgb(0,0,0, 0.8);
+    color: #ffffff;
 }
 
 .contentButton {
