@@ -2,7 +2,7 @@
 
 
 //What sort of functionality do we want here?
-    //hiding/scrolling through sections/projects
+//hiding/scrolling through sections/projects
 
 //
 
@@ -11,18 +11,18 @@ let projectNumber = 1;
 
 ////////// HTML ////////////
 const projectSelect = function(number){
-    switch (number){
-        case 1:
-            return (project1);
-        case 2:
-            return (project2);
-        case 3:
-            return (project3);
-        case 4:
-            return (project4);
-        case 5:
-            return (project5);
-    }
+  switch (number){
+  case 1:
+    return (project1);
+  case 2:
+    return (project2);
+  case 3:
+    return (project3);
+  case 4:
+    return (project4);
+  case 5:
+    return (project5);
+  }
 }
 
 const project1 = `
@@ -100,93 +100,93 @@ const project5 = `
 
 //////// Rendering ////////
 const render = function(){
-    renderProject();
+  renderProject();
 }
 
 const renderDefault = function(){
-    defaultHides();
+  defaultHides();
 }
 
 const renderProject = function(){
-    $('#projectSection').html(projectSelect(projectNumber));
+  $('#projectSection').html(projectSelect(projectNumber));
 }
 
 const defaultHides = function(){
-    $('.projects').hide();
-    $('.contact').hide();
+  $('.projects').hide();
+  $('.contact').hide();
 }
 
 //////// Functionality ////////
 const openNext = function(){
-    if(projectNumber < 5){
-        projectNumber++;
-    } else{
-        projectNumber = 1;
-    }
+  if(projectNumber < 5){
+    projectNumber++;
+  } else{
+    projectNumber = 1;
+  }
 }
 
 const openPrevious = function(){
-    if(projectNumber > 1){
-        projectNumber--;
-    } else{
-        projectNumber = 5;
-    }
+  if(projectNumber > 1){
+    projectNumber--;
+  } else{
+    projectNumber = 5;
+  }
 }
 
 
 ////////// EVENT LISTENERS /////////////////
 const bindEventListeners = function(){
-    nextArrow();
-    backArrow();
-    aboutMe();
-    projects();
-    contact();
+  nextArrow();
+  backArrow();
+  aboutMe();
+  projects();
+  contact();
 }
 
 const aboutMe = function(){
-    $('body').on('click', '#aboutMe', function(event){
-        event.preventDefault();
-        $('.projects').hide();
-        $('.contact').hide();
-        $('.aboutMe').show();
-    });
+  $('body').on('click', '#aboutMe', function(event){
+    event.preventDefault();
+    $('.projects').hide();
+    $('.contact').hide();
+    $('.aboutMe').show();
+  });
 }
 
 const projects = function(){
-    $('.contentNav').on('click', '#projects', function(event){
-        $('.contact').hide();
-        $('.aboutMe').hide();
-        $('.projects').show();
-        console.log(projectNumber);
-        console.log(projectSelect(projectNumber));
-        render();
-    });
+  $('.contentNav').on('click', '#projects', function(event){
+    $('.contact').hide();
+    $('.aboutMe').hide();
+    $('.projects').show();
+    console.log(projectNumber);
+    console.log(projectSelect(projectNumber));
+    render();
+  });
 }
 
 const contact = function(){
-    $('.contentNav').on('click', '#contact', function(event){
-        $('.contact').hide();
-        $('.aboutMe').hide();
-        $('.projects').show();
-    });
+  $('.contentNav').on('click', '#contact', function(event){
+    $('.contact').show();
+    $('.aboutMe').hide();
+    $('.projects').hide();
+  });
 }
 
 const nextArrow = function(){
-    $('.content').on('click', '#next', function(event){
-        event.preventDefault();
-        openNext();
-        render();
-    })
+  $('.content').on('click', '#next', function(event){
+    event.preventDefault();
+    openNext();
+    render();
+  })
 }
 
 const backArrow = function(){
-    $('.content').on('click', '#previous', function(event){
-        event.preventDefault();
-        openPrevious();
-        render();
-    })
+  $('.content').on('click', '#previous', function(event){
+    event.preventDefault();
+    openPrevious();
+    render();
+  })
 }
 
 
-    $(bindEventListeners());
-    $(renderDefault());
+$(bindEventListeners());
+$(renderDefault());
