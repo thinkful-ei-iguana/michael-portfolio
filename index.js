@@ -23,7 +23,7 @@ const projectSelect = function(number){
   case 5:
     return (project5);
   }
-}
+};
 
 const project1 = `
     <h3>Quiz App</h3>
@@ -58,27 +58,31 @@ const project2 = `
     `;
 
 const project3 =     `
-        Placeholder for Project 3
-        <p>The purpose of this project was to </p>
+        <h3>War!</h3>
+        <p>The purpose of this project was to demonstate our first production quality, full-stack capstone. </p>
         <ul>Technologies
-            <li></li>
+            <li>NodeJS</li>
+            <li>React</li>
+            <li>Express</li>
             <li></li>
         </ul>
-        <a href="liveurl"></a>
-        <a href="repositoryurl"></a>
+        <a href="https://michael-war-app.now.sh/landing">Live Page</a>
+        <a href="repositoryurl">Front End Repository</a>
+        <a href="repositoryurl">Back End Repository</a>
         <button class="navButton" id="previous">&#8249;</button>
         <button class="navButton" id="next">&#8250;</button>
     `;
 
 const project4 = `
-        Placeholder for Project 4
-        <p>The purpose of this project was to </p>
+        <h3>Star Search</h3>
+        <p>The purpose of this project was to demonstrate a live deployment of a front end that connects to an existing API.</p>
         <ul>Technologies
-        <li></li>
-        <li></li>
+        <li>React</li>
+        <li>JavaScript</li>
+        <li>CSS</li>
         </ul>
-    <a href="liveurl"></a>
-    <a href="repositoryurl"></a>
+    <a href="https://michael-star-search-4tvxjwhtm.now.sh/">Live Page</a>
+    <a href="https://github.com/thinkful-ei-iguana/michael-definitely-not-starwars-deployment">Repository</a>
     <button class="navButton" id="previous">&#8249;</button>
     <button class="navButton" id="next">&#8250;</button>
     `;
@@ -101,20 +105,20 @@ const project5 = `
 //////// Rendering ////////
 const render = function(){
   renderProject();
-}
+};
 
 const renderDefault = function(){
   defaultHides();
-}
+};
 
 const renderProject = function(){
   $('#projectSection').html(projectSelect(projectNumber));
-}
+};
 
 const defaultHides = function(){
   $('.projects').hide();
   $('.contact').hide();
-}
+};
 
 //////// Functionality ////////
 const openNext = function(){
@@ -123,7 +127,7 @@ const openNext = function(){
   } else{
     projectNumber = 1;
   }
-}
+};
 
 const openPrevious = function(){
   if(projectNumber > 1){
@@ -131,7 +135,7 @@ const openPrevious = function(){
   } else{
     projectNumber = 5;
   }
-}
+};
 
 
 ////////// EVENT LISTENERS /////////////////
@@ -141,35 +145,46 @@ const bindEventListeners = function(){
   aboutMe();
   projects();
   contact();
-}
+};
 
 const aboutMe = function(){
   $('body').on('click', '#aboutMe', function(event){
     event.preventDefault();
     $('.projects').hide();
     $('.contact').hide();
+    $('.repertoire').hide();
     $('.aboutMe').show();
   });
-}
+};
+
+const repertoire = function(){
+  $('.contentNav').on('click', '#repertoire', function(event){
+    event.preventDefault();
+    $('.contact').hide();
+    $('.aboutMe').hide();
+    $('.projects').hide();
+    $('.repertoire').show();
+  });
+};
 
 const projects = function(){
   $('.contentNav').on('click', '#projects', function(event){
     $('.contact').hide();
     $('.aboutMe').hide();
+    $('.repertoire').hide();
     $('.projects').show();
-    console.log(projectNumber);
-    console.log(projectSelect(projectNumber));
     render();
   });
-}
+};
 
 const contact = function(){
   $('.contentNav').on('click', '#contact', function(event){
     $('.contact').show();
     $('.aboutMe').hide();
+    $('.repertoire').hide();
     $('.projects').hide();
   });
-}
+};
 
 const nextArrow = function(){
   $('.content').on('click', '#next', function(event){
@@ -177,7 +192,7 @@ const nextArrow = function(){
     openNext();
     render();
   });
-}
+};
 
 const backArrow = function(){
   $('.content').on('click', '#previous', function(event){
@@ -185,7 +200,7 @@ const backArrow = function(){
     openPrevious();
     render();
   });
-}
+};
 
 
 $(bindEventListeners());
