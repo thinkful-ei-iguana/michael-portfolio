@@ -26,6 +26,78 @@ const projectSelect = function(number){
 };
 
 const project1 = `
+
+    <h3>digi-doodle</h3>    
+        <p>The purpose of this project was to create a full capstone</p>
+        <ul>Technologies
+            <li></li>
+            <li></li>
+        </ul>
+    <a href="liveurl"></a>
+    <a href="repositoryurl"></a>
+
+    `;
+
+
+const project2 = `
+ 
+    <h3>Spaced Repetition</h3>
+    <p>The purpose of this project was to create a spaced repitition language learning application that demonstrated back end technologies using linked-lists created from database requests.  It also showcases integration testing using Cypress.  Any time a guesser gets an answer right, that prompt is not to appear for 2 spaces times the number of times in a row the prompt was translated correctly.</p>
+    <ul>Technologies
+      <li>Front End: </br>
+      
+      </li>
+      <li>Back End: </br>
+
+      </li>
+      <li>Testing: </br>
+          Cypress, Jest, Mocha, Chai
+      </li>
+    </ul>
+    <a href="https://michael-star-search-4tvxjwhtm.now.sh/">Live Page</a>
+    <a href="https://github.com/thinkful-ei-iguana/michael-definitely-not-starwars-deployment">Repository</a>
+    <div class="thumbnails">
+
+    </div>
+  
+    `;
+
+
+const project3 =     `
+
+    <h3>War!</h3>
+    <p>The purpose of this project was to demonstate our first production quality, full-stack capstone. </p>
+    <ul>Technologies
+        <li>NodeJS</li>
+        <li>React</li>
+        <li>Express</li>
+        <li></li>
+    </ul>
+    <a href="https://michael-war-app.now.sh/landing">Live Page</a>
+    <a href="repositoryurl">Front End Repository</a>
+    <a href="repositoryurl">Back End Repository</a>
+  
+    `;
+     
+
+const project4 = `
+
+    <h3>Bookmarks App</h3>
+    <p>The purpose of this project was to </p>
+    <ul>Technologies
+        <li>Javascript</li>
+        <li>ajax</li>
+        <li>api</li>
+        <li>CSS</li>
+        <li>Html</li>
+    </ul>
+    <a href="liveurl"></a>
+    <a href="repositoryurl"></a>
+
+    `;
+
+const project5 = `
+
     <h3>Quiz App</h3>
     <p>The purpose of this project was to </p>
     <ul>Technologies
@@ -37,69 +109,8 @@ const project1 = `
     </ul>
     <a href="liveurl"></a>
     <a href="repositoryurl"></a>
-    <button class="navButton" id="previous">&#8249;</button>
-    <button class="navButton" id="next">&#8250;</button>
-     `;
 
-const project2 = `
-        <h3>Bookmarks App</h3>
-        <p>The purpose of this project was to </p>
-        <ul>Technologies
-            <li>Javascript</li>
-            <li>ajax</li>
-            <li>api</li>
-            <li>CSS</li>
-            <li>Html</li>
-        </ul>
-        <a href="liveurl"></a>
-        <a href="repositoryurl"></a>
-        <button class="navButton" id="previous">&#8249;</button>
-        <button class="navButton" id="next">&#8250;</button>
-    `;
-
-const project3 =     `
-        <h3>War!</h3>
-        <p>The purpose of this project was to demonstate our first production quality, full-stack capstone. </p>
-        <ul>Technologies
-            <li>NodeJS</li>
-            <li>React</li>
-            <li>Express</li>
-            <li></li>
-        </ul>
-        <a href="https://michael-war-app.now.sh/landing">Live Page</a>
-        <a href="repositoryurl">Front End Repository</a>
-        <a href="repositoryurl">Back End Repository</a>
-        <button class="navButton" id="previous">&#8249;</button>
-        <button class="navButton" id="next">&#8250;</button>
-    `;
-
-const project4 = `
-        <h3>Star Search</h3>
-        <p>The purpose of this project was to demonstrate a live deployment of a front end that connects to an existing API.</p>
-        <ul>Technologies
-        <li>React</li>
-        <li>JavaScript</li>
-        <li>CSS</li>
-        </ul>
-    <a href="https://michael-star-search-4tvxjwhtm.now.sh/">Live Page</a>
-    <a href="https://github.com/thinkful-ei-iguana/michael-definitely-not-starwars-deployment">Repository</a>
-    <button class="navButton" id="previous">&#8249;</button>
-    <button class="navButton" id="next">&#8250;</button>
-    `;
-            
-const project5 = `
-        Placeholder for Project 5
-        <p>The purpose of this project was to </p>
-        <ul>Technologies
-            <li></li>
-            <li></li>
-        </ul>
-    <a href="liveurl"></a>
-    <a href="repositoryurl"></a>
-    <button class="navButton" id="previous">&#8249;</button>
-    <button class="navButton" id="next">&#8250;</button>
-    `;
-
+      `;
 
 
 //////// Rendering ////////
@@ -112,19 +123,20 @@ const renderDefault = function(){
 };
 
 const renderProject = function(){
-  $('#projectSection').html(projectSelect(projectNumber));
+  $('#projectContent').html(projectSelect(projectNumber));
 };
 
 const defaultHides = function(){
   $('.projects').hide();
-  $('.contact').hide();
+  $('.repertoire').hide();
+  $('.moreAboutMe').hide();
 };
 
 //////// Functionality ////////
 const openNext = function(){
   if(projectNumber < 5){
     projectNumber++;
-  } else{
+  } else {
     projectNumber = 1;
   }
 };
@@ -144,45 +156,36 @@ const bindEventListeners = function(){
   backArrow();
   aboutMe();
   projects();
-  contact();
+  repertoire();
 };
 
 const aboutMe = function(){
   $('body').on('click', '#aboutMe', function(event){
     event.preventDefault();
     $('.projects').hide();
-    $('.contact').hide();
     $('.repertoire').hide();
-    $('.aboutMe').show();
+    $('.aboutMe').hide();
+    $('.moreAboutMe').show();
   });
 };
 
 const repertoire = function(){
   $('.contentNav').on('click', '#repertoire', function(event){
     event.preventDefault();
-    $('.contact').hide();
     $('.aboutMe').hide();
     $('.projects').hide();
+    $('.moreAboutMe').hide();
     $('.repertoire').show();
   });
 };
 
 const projects = function(){
   $('.contentNav').on('click', '#projects', function(event){
-    $('.contact').hide();
     $('.aboutMe').hide();
     $('.repertoire').hide();
+    $('.moreAboutMe').hide();
     $('.projects').show();
     render();
-  });
-};
-
-const contact = function(){
-  $('.contentNav').on('click', '#contact', function(event){
-    $('.contact').show();
-    $('.aboutMe').hide();
-    $('.repertoire').hide();
-    $('.projects').hide();
   });
 };
 
