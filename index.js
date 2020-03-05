@@ -38,7 +38,7 @@ const project1 = `
             Node, Express, socket.io, PostgreSQL, Knex
           </li>
           <li><b>Testing:</b> </br>
-              Jest, Enzyme, Mocha, Chai
+            Jest, Enzyme, Mocha, Chai
           </li>
         </ul>
 
@@ -61,13 +61,13 @@ const project2 = `
 
     <ul>Technologies
       <li><b>Front End:</b> </br>
-      
+        HTML, CSS, JS, React
       </li>
       <li><b>Back End:</b> </br>
-
+        Node, Express, PostgreSQL, Knex
       </li>
       <li><b>Testing:</b> </br>
-          Cypress, Jest, Mocha, Chai
+        Cypress, Jest, Mocha, Chai
       </li>
     </ul>
 
@@ -90,13 +90,13 @@ const project3 =     `
 
     <ul>Technologies
       <li><b>Front End:</b> </br>
-        
+        HTML, CSS, JS, React
       </li>
       <li><b>Back End:</b> </br>
-
+        Node, Express, PostgreSQL, Knex
       </li>
       <li><b>Testing:</b> </br>
-          Jest, Mocha, Chai
+        Jest, Mocha, Chai
       </li>
     </ul>
 
@@ -135,8 +135,8 @@ const project4 = `
 
 const project5 = `
 
-    <h3>Quiz App</h3>
-    <p>This was the first project that was fully </p>
+    <h3>Petful</h3>
+    <p>This pet adoption app project was constructed in a day, and meant to showcase queue data structures for pets to be adopted by adoptees.  A user can join the queue to adopt and once it is their turn, select an animal for adoption.   </p>
     <ul>Technologies
       <li><b>Front End:</b> </br>
         Javascript, CSS, HTML, Git, Command
