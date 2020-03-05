@@ -94,8 +94,10 @@ main::-webkit-scrollbar { display: none; }
 .projectContent {
   display: flex;
   flex-direction: column;
-  min-width: 80%;
-  max-width: 80%;
+  min-width: 70%;
+  max-width: 70%;
+  padding-right: 5%;
+  padding-left: 5%;
 }
 
 .content {

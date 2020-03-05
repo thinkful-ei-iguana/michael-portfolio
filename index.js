@@ -286,6 +286,7 @@ const closeImg = function() {
     $('.contentNav').show();
     $('.projects').show();
     $('.heroContainer').show();
+    render();
   });
 };
 
