@@ -19,7 +19,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1;
+    z-index: 5;
     position: fixed;
     width: 100vw;
     top: 0;
@@ -62,16 +62,13 @@ body{
     min-height: 100%;
 }
 
-main{
-    min-height: 100%;
-    padding-bottom: 50px;
-}
+
 main {
-  height: 90vh;
+  height: 98vh;
   overflow: scroll;
-  margin-top: 7vh;
-  bottom: 10vh;
 }
+
+main::-webkit-scrollbar { display: none; }
 
 .container{
     position: relative;
@@ -152,6 +149,10 @@ footer {
     border: 3px groove #625757;
 }
 
+li {
+  padding-bottom: 1%;
+}
+
 .heroContainer {
     display: flex;
     margin-top: 100px;
@@ -171,9 +172,9 @@ footer {
     z-index: 1;
 }
 
-.projects{
+.projects {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color: rgb(0,0,0, 0.8);
     color: #ffffff;
 }
@@ -278,6 +279,14 @@ footer {
 .imgContainer:hover {
   background-color: rgba(255, 249, 249, 0.57);
   cursor: pointer;
+}
+
+.moreAboutMe {
+  background-color: black;
+}
+
+.repertoire {
+  background-color: black;
 }
 
 .o{
