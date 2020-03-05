@@ -48,7 +48,7 @@ const project1 = `
 
     <div class="thumbnails">
       <div class="thumbnailImg1"><img src="https://github.com/thinkful-ei-iguana/michael-portfolio/blob/gh-pages/screenshots/dd-landing.PNG" alt="digi-doodle landing page"></div>
-      <div class="thumbnailImg2"><img src="https://github.com/thinkful-ei-iguana/michael-portfolio/blob/gh-pages/screenshots/dd-game.PNG" alt="digi-doodle game page"></div>
+      <div class="thumbnailImg2"><img src="https://raw.githubusercontent.com/thinkful-ei-iguana/michael-portfolio/gh-pages/screenshots/dd-game.PNG" alt="digi-doodle game page"></div>
     </div>
     
     `;
