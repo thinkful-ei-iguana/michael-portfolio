@@ -139,14 +139,17 @@ const project5 = `
     <p>This pet adoption app project was constructed in a day, and meant to showcase queue data structures for pets to be adopted by adoptees.  A user can join the queue to adopt and once it is their turn, select an animal for adoption.   </p>
     <ul>Technologies
       <li><b>Front End:</b> </br>
-        Javascript, CSS, HTML, Git, Command
+        HTML, CSS, JS, React
+      </li>
+      <li><b>Back End:</b> </br>
+        Node, Express, PostgreSQL, Knex
       </li>
     </ul>
 
     <a href="https://thinkful-ei-iguana.github.io/TheQuizToEndAllQuizzes/" target="_blank">Live Site</a>
     <a href="https://github.com/thinkful-ei-iguana/TheQuizToEndAllQuizzes">Repository</a>
 
-    <div class="thumbnails">
+    <div class="thumbnails">Placeholder: Need work on petful for screenshots.
       <div class="thumbnailImg1"><img src="/screenshots/dd-landing.png" alt="digi-doodle landing page"></div>
       <div class="thumbnailImg2"><img src="/screenshots/dd-game.png" alt="digi-doodle game page"></div>
     </div>
