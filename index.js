@@ -28,14 +28,29 @@ const projectSelect = function(number){
 const project1 = `
 
     <h3>digi-doodle</h3>    
-        <p>The purpose of this project was to create a full capstone</p>
-        <ul>Technologies
-            <li></li>
-            <li></li>
-        </ul>
-    <a href="liveurl"></a>
-    <a href="repositoryurl"></a>
+        <p>The purpose of this project was to create a full stack project to showcase some fun and interactive technology.  This was manifested in the form of a game!  digi-doodle is a pictionary-like game that features multi-player capability through the use of websockets.  This was an entirely new technology that was learned and implemented over the course of two weeks.</p>
 
+        <ul>Technologies
+          <li>Front End: </br>
+
+          </li>
+          <li>Back End: </br>
+    
+          </li>
+          <li>Testing: </br>
+              Jest, Enzyme, Mocha, Chai
+          </li>
+        </ul>
+
+    <a href="https://digi-doodle.now.sh/" target="_blank">Live Site</a>
+    <a href="https://github.com/thinkful-ei-iguana/digi-doodle-client" target="_blank">Client Repo</a>
+    <a href="https://github.com/thinkful-ei-iguana/digi-doodle-server" target="_blank">Server Repo</a>
+
+    <div class="thumbnails">
+      <div class="thumbnailImg1"><img src="/screenshots/dd-landing.png" alt="digi-doodle landing page"></div>
+      <div class="thumbnailImg2"><img src="/screenshots/dd-game.png" alt="digi-doodle game page"></div>
+    </div>
+    
     `;
 
 
@@ -43,6 +58,7 @@ const project2 = `
  
     <h3>Spaced Repetition</h3>
     <p>The purpose of this project was to create a spaced repitition language learning application that demonstrated back end technologies using linked-lists created from database requests.  It also showcases integration testing using Cypress.  Any time a guesser gets an answer right, that prompt is not to appear for 2 spaces times the number of times in a row the prompt was translated correctly.</p>
+
     <ul>Technologies
       <li>Front End: </br>
       
@@ -54,10 +70,14 @@ const project2 = `
           Cypress, Jest, Mocha, Chai
       </li>
     </ul>
-    <a href="https://michael-star-search-4tvxjwhtm.now.sh/">Live Page</a>
-    <a href="https://github.com/thinkful-ei-iguana/michael-definitely-not-starwars-deployment">Repository</a>
-    <div class="thumbnails">
 
+    <a href="https://spaced-rep-phi.now.sh/" target="_blank">Live Site</a>
+    <a href="https://github.com/thinkful-ei-iguana/michael-anugrah-spaced-repetition-client" target="_blank">Client Repo</a>
+    <a href="https://github.com/thinkful-ei-iguana/michael-anugrah-spaced-repetition-server" target="_blank">Server Repo</a>
+
+    <div class="thumbnails">
+      <div class="thumbnailImg1"><img src="/screenshots/spaced-rep-landing.png" alt="digi-doodle landing page"></div>
+      <div class="thumbnailImg2"><img src="/screenshots/spaced-rep-guessing.png" alt="digi-doodle game page"></div>
     </div>
   
     `;
@@ -67,15 +87,27 @@ const project3 =     `
 
     <h3>War!</h3>
     <p>The purpose of this project was to demonstate our first production quality, full-stack capstone. </p>
+
     <ul>Technologies
-        <li>NodeJS</li>
-        <li>React</li>
-        <li>Express</li>
-        <li></li>
+      <li>Front End: </br>
+        
+      </li>
+      <li>Back End: </br>
+
+      </li>
+      <li>Testing: </br>
+          Jest, Mocha, Chai
+      </li>
     </ul>
-    <a href="https://michael-war-app.now.sh/landing">Live Page</a>
-    <a href="repositoryurl">Front End Repository</a>
-    <a href="repositoryurl">Back End Repository</a>
+
+    <a href="https://michael-war-app.now.sh/landing" target="_blank">Live Site</a>
+    <a href="https://github.com/mweedman/war-front-end" target="_blank">Client Repo</a>
+    <a href="https://github.com/mweedman/war-back-end" targer="_blank">Server Repo</a>
+
+    <div class="thumbnails">
+      <div class="thumbnailImg1"><img src="/screenshots/dd-landing.png" alt="digi-doodle landing page"></div>
+      <div class="thumbnailImg2"><img src="/screenshots/dd-game.png" alt="digi-doodle game page"></div>
+    </div>
   
     `;
      
@@ -83,32 +115,41 @@ const project3 =     `
 const project4 = `
 
     <h3>Bookmarks App</h3>
-    <p>The purpose of this project was to </p>
+    <p>The purpose of this project was to provide an introduction to utilizing APIs to perform simple CRUD operations and return a renderable list of website bookmarks. </p>
+
     <ul>Technologies
-        <li>Javascript</li>
-        <li>ajax</li>
-        <li>api</li>
-        <li>CSS</li>
-        <li>Html</li>
+      <li>Front End: </br>
+        Javascript, AJAX, API, CSS, HTML
+      </li>
     </ul>
-    <a href="liveurl"></a>
-    <a href="repositoryurl"></a>
+
+    <a href="https://thinkful-ei-iguana.github.io/michael-bookmarks-app/dist/" target="_blank">Live Site</a>
+    <a href="https://github.com/thinkful-ei-iguana/michael-bookmarks-app/tree/gh-pages" target="_blank">Repository</a>
+
+    <div class="thumbnails">
+      <div class="thumbnailImg1"><img src="/screenshots/dd-landing.png" alt="digi-doodle landing page"></div>
+      <div class="thumbnailImg2"><img src="/screenshots/dd-game.png" alt="digi-doodle game page"></div>
+    </div>
 
     `;
 
 const project5 = `
 
     <h3>Quiz App</h3>
-    <p>The purpose of this project was to </p>
+    <p>This was the first project that was fully </p>
     <ul>Technologies
-        <li>Javascript</li>
-        <li>CSS</li>
-        <li>Html</li>
-        <li>Git</li>
-        <li>Command</li>
+      <li>Front End: </br>
+        Javascript, CSS, HTML, Git, Command
+      </li>
     </ul>
-    <a href="liveurl"></a>
-    <a href="repositoryurl"></a>
+
+    <a href="https://thinkful-ei-iguana.github.io/TheQuizToEndAllQuizzes/" target="_blank">Live Site</a>
+    <a href="https://github.com/thinkful-ei-iguana/TheQuizToEndAllQuizzes">Repository</a>
+
+    <div class="thumbnails">
+      <div class="thumbnailImg1"><img src="/screenshots/dd-landing.png" alt="digi-doodle landing page"></div>
+      <div class="thumbnailImg2"><img src="/screenshots/dd-game.png" alt="digi-doodle game page"></div>
+    </div>
 
       `;
 
@@ -123,6 +164,7 @@ const renderDefault = function(){
 };
 
 const renderProject = function(){
+  $('.imgContainer').hide();
   $('#projectContent').html(projectSelect(projectNumber));
 };
 
@@ -157,6 +199,9 @@ const bindEventListeners = function(){
   aboutMe();
   projects();
   repertoire();
+  thumbnail1();
+  thumbnail2();
+  closeImg();
 };
 
 const aboutMe = function(){
@@ -202,6 +247,45 @@ const backArrow = function(){
     event.preventDefault();
     openPrevious();
     render();
+  });
+};
+
+const thumbnail1 = function() {
+  $('.content').on('click', '.thumbnailImg1', function(event) {
+    event.stopPropagation();
+    event.preventDefault();
+    let img = $('.thumbnailImg1').children()[0].src;
+    let imageData = `<img class="fullSizeImage" src="${img}" alt="full size">`;
+    $('.imgContainer').show();
+    $('.contentNav').hide();
+    $('.projects').hide();
+    $('.heroContainer').hide();
+    $('.imgContainer').html(imageData);
+  });
+};
+
+const thumbnail2 = function() {
+  $('.content').on('click', '.thumbnailImg2', function(event) {
+    event.stopPropagation();
+    event.preventDefault();
+    let img = $('.thumbnailImg2').children()[0].src;
+    let imageData = `<img class="fullSizeImage" src="${img}" alt="full size">`;
+    $('.imgContainer').show();
+    $('.contentNav').hide();
+    $('.projects').hide();
+    $('.heroContainer').hide();
+    $('.imgContainer').html(imageData);
+  });
+};
+
+const closeImg = function() {
+  $('.content').on('click', '.imgContainer', function(event) {
+    event.preventDefault();
+    $('.imgContainer').empty();
+    $('.imgContainer').hide();
+    $('.contentNav').show();
+    $('.projects').show();
+    $('.heroContainer').show();
   });
 };
 
