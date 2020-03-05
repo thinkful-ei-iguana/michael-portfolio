@@ -47,8 +47,8 @@ const project1 = `
     <a href="https://github.com/thinkful-ei-iguana/digi-doodle-server" target="_blank">Server Repo</a>
 
     <div class="thumbnails">
-      <div class="thumbnailImg1"><img src="https://github.com/thinkful-ei-iguana/michael-portfolio/blob/gh-pages/screenshots/dd-landing.PNG?raw=true" alt="digi-doodle landing page"></div>
-      <div class="thumbnailImg2"><img src="https://github.com/thinkful-ei-iguana/michael-portfolio/blob/gh-pages/screenshots/dd-game.PNG?raw=true" alt="digi-doodle game page"></div>
+      <div class="thumbnailImg1"><img src="https://github.com/thinkful-ei-iguana/michael-portfolio/blob/gh-pages/screenshots/dd-landing.PNG" alt="digi-doodle landing page"></div>
+      <div class="thumbnailImg2"><img src="https://github.com/thinkful-ei-iguana/michael-portfolio/blob/gh-pages/screenshots/dd-game.PNG" alt="digi-doodle game page"></div>
     </div>
     
     `;
@@ -76,8 +76,8 @@ const project2 = `
     <a href="https://github.com/thinkful-ei-iguana/michael-anugrah-spaced-repetition-server" target="_blank">Server Repo</a>
 
     <div class="thumbnails">
-      <div class="thumbnailImg1"><img src="https://github.com/thinkful-ei-iguana/michael-portfolio/blob/gh-pages/screenshots/spaced-rep-landing.PNG?raw=true" alt="digi-doodle landing page"></div>
-      <div class="thumbnailImg2"><img src="https://github.com/thinkful-ei-iguana/michael-portfolio/blob/gh-pages/screenshots/spaced-rep-guessing.PNG?raw=true" alt="digi-doodle game page"></div>
+      <div class="thumbnailImg1"><img src="https://github.com/thinkful-ei-iguana/michael-portfolio/blob/gh-pages/screenshots/spaced-rep-landing.PNG" alt="digi-doodle landing page"></div>
+      <div class="thumbnailImg2"><img src="https://github.com/thinkful-ei-iguana/michael-portfolio/blob/gh-pages/screenshots/spaced-rep-guessing.PNG" alt="digi-doodle game page"></div>
     </div>
   
     `;
