@@ -27,17 +27,17 @@ const projectSelect = function(number){
 
 const project1 = `
 
-    <h3>digi-doodle</h3>    
+    <h2>digi-doodle</h2>    
         <p>The purpose of this project was to create a full stack project to showcase some fun and interactive technology.  This was manifested in the form of a game!  digi-doodle is a pictionary-like game that features multi-player capability through the use of websockets.  This was an entirely new technology that was learned and implemented over the course of two weeks.</p>
 
-        <ul>Technologies</br></br>
-          <li><b>Front End:</b> </br>
+        <ul><h3>Technologies</h3>
+          <li><h4>Front End:</h4> 
             HTML, CSS, JS, React, Cookies, socket.io
           </li>
-          <li><b>Back End:</b> </br>
+          <li><h4>Back End:</h4> 
             Node, Express, socket.io, PostgreSQL, Knex
           </li>
-          <li><b>Testing:</b> </br>
+          <li><h4>Testing:</h4> 
             Jest, Enzyme, Mocha, Chai
           </li>
         </ul>
@@ -56,17 +56,17 @@ const project1 = `
 
 const project2 = `
  
-    <h3>Spaced Repetition</h3>
+    <h4>Spaced Repetition</h4>
     <p>The purpose of this project was to create a spaced repitition language learning application that demonstrated back end technologies using linked-lists created from database requests.  It also showcases integration testing using Cypress.  Any time a guesser gets an answer right, that prompt is not to appear for 2 spaces times the number of times in a row the prompt was translated correctly.</p>
 
-    <ul>Technologies
-      <li><b>Front End:</b> </br>
+    <ul><h3>Technologies</h3>
+      <li><h4>Front End:</h4> 
         HTML, CSS, JS, React
       </li>
-      <li><b>Back End:</b> </br>
+      <li><h4>Back End:</h4> 
         Node, Express, PostgreSQL, Knex
       </li>
-      <li><b>Testing:</b> </br>
+      <li><h4>Testing:</h4> 
         Cypress, Jest, Mocha, Chai
       </li>
     </ul>
@@ -85,17 +85,17 @@ const project2 = `
 
 const project3 =     `
 
-    <h3>War!</h3>
+    <h2>War!</h2>
     <p>The purpose of this project was to demonstate our first production quality, full-stack capstone. </p>
 
-    <ul>Technologies
-      <li><b>Front End:</b> </br>
+    <ul><h3>Technologies</h3>
+      <li><h4>Front End:</h4> 
         HTML, CSS, JS, React
       </li>
-      <li><b>Back End:</b> </br>
+      <li><h4>Back End:</h4> 
         Node, Express, PostgreSQL, Knex
       </li>
-      <li><b>Testing:</b> </br>
+      <li><h4>Testing:</h4> 
         Jest, Mocha, Chai
       </li>
     </ul>
@@ -114,11 +114,11 @@ const project3 =     `
 
 const project4 = `
 
-    <h3>Bookmarks App</h3>
+    <h2>Bookmarks App</h2>
     <p>The purpose of this project was to provide an introduction to utilizing APIs to perform simple CRUD operations and return a renderable list of website bookmarks. </p>
 
-    <ul>Technologies
-      <li><b>Front End:</b> </br>
+    <ul><h3>Technologies</h3>
+      <li><h4>Front End:</h4> 
         Javascript, AJAX, API, CSS, HTML
       </li>
     </ul>
@@ -135,13 +135,13 @@ const project4 = `
 
 const project5 = `
 
-    <h3>Petful</h3>
+    <h2>Petful</h2>
     <p>This pet adoption app project was constructed in a day, and meant to showcase queue data structures for pets to be adopted by adoptees.  A user can join the queue to adopt and once it is their turn, select an animal for adoption.   </p>
-    <ul>Technologies
-      <li><b>Front End:</b> </br>
+    <ul><h3>Technologies</h3>
+      <li><h4>Front End:</h4> 
         HTML, CSS, JS, React
       </li>
-      <li><b>Back End:</b> </br>
+      <li><h4>Back End:</h4> 
         Node, Express, PostgreSQL, Knex
       </li>
     </ul>
