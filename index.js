@@ -56,7 +56,7 @@ const project1 = `
 
 const project2 = `
  
-    <h4>Spaced Repetition</h4>
+    <h2>Spaced Repetition</h2>
     <p>The purpose of this project was to create a spaced repitition language learning application that demonstrated back end technologies using linked-lists created from database requests.  It also showcases integration testing using Cypress.  Any time a guesser gets an answer right, that prompt is not to appear for 2 spaces times the number of times in a row the prompt was translated correctly.</p>
 
     <ul><h3>Technologies</h3>
@@ -133,28 +133,28 @@ const project4 = `
 
     `;
 
-const project5 = `
+// const project5 = `
 
-    <h2>Petful</h2>
-    <p>This pet adoption app project was constructed in a day, and meant to showcase queue data structures for pets to be adopted by adoptees.  A user can join the queue to adopt and once it is their turn, select an animal for adoption.   </p>
-    <ul><h3>Technologies</h3>
-      <li><h4>Front End:</h4> 
-        HTML, CSS, JS, React
-      </li>
-      <li><h4>Back End:</h4> 
-        Node, Express, PostgreSQL, Knex
-      </li>
-    </ul>
+//     <h2>Petful</h2>
+//     <p>This pet adoption app project was constructed in a day, and meant to showcase queue data structures for pets to be adopted by adoptees.  A user can join the queue to adopt and once it is their turn, select an animal for adoption.   </p>
+//     <ul><h3>Technologies</h3>
+//       <li><h4>Front End:</h4> 
+//         HTML, CSS, JS, React
+//       </li>
+//       <li><h4>Back End:</h4> 
+//         Node, Express, PostgreSQL, Knex
+//       </li>
+//     </ul>
 
-    <a href="https://thinkful-ei-iguana.github.io/TheQuizToEndAllQuizzes/" target="_blank">Live Site</a>
-    <a href="https://github.com/thinkful-ei-iguana/TheQuizToEndAllQuizzes">Repository</a>
+//     <a href="https://thinkful-ei-iguana.github.io/TheQuizToEndAllQuizzes/" target="_blank">Live Site</a>
+//     <a href="https://github.com/thinkful-ei-iguana/TheQuizToEndAllQuizzes">Repository</a>
 
-    <div class="thumbnails">Placeholder: Need work on petful for screenshots.
-      <div class="thumbnailImg1"><img src="/screenshots/dd-landing.png" alt="digi-doodle landing page"></div>
-      <div class="thumbnailImg2"><img src="/screenshots/dd-game.png" alt="digi-doodle game page"></div>
-    </div>
+//     <div class="thumbnails">Placeholder: Need work on petful for screenshots.
+//       <div class="thumbnailImg1"><img src="/screenshots/dd-landing.png" alt="digi-doodle landing page"></div>
+//       <div class="thumbnailImg2"><img src="/screenshots/dd-game.png" alt="digi-doodle game page"></div>
+//     </div>
 
-      `;
+//       `;
 
 
 //////// Rendering ////////
@@ -179,7 +179,7 @@ const defaultHides = function(){
 
 //////// Functionality ////////
 const openNext = function(){
-  if(projectNumber < 5){
+  if(projectNumber < 4){
     projectNumber++;
   } else {
     projectNumber = 1;
